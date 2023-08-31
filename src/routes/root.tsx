@@ -1,11 +1,6 @@
 import Navbar from "../components/Navbar";
 import HeroSvg from "../assets/hero.png";
-// import EllipseSvg from "../assets/ellipse.svg";
-// import EllipseLeftSvg from "../assets/ellipse2.svg";
 
-// import BookSvg from "../assets/book.svg";
-// import KeyHoleSvg from "../assets/keyhole.svg";
-// import GoalSvg from "../assets/goal.svg";
 import TextSvg from "../assets/text.svg";
 import ValueSvg from "../assets/value.svg";
 import JacketSvg from "../assets/jacket.svg";
@@ -13,12 +8,13 @@ import DigitalPassSvg from "../assets/digital-pass.svg";
 import Figure1 from "../assets/figure1.svg";
 import Figure2 from "../assets/figure2.svg";
 import Figure3 from "../assets/figure3.svg";
+import Figure4 from "../assets/figure4.svg";
 
 import GiveawaySvg from "../assets/giveaway.svg";
 import RoadMapSvg from "../assets/roadmap.svg";
-import TeamPng from "../assets/team.png";
 
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const Root = () => {
   return (
@@ -29,8 +25,6 @@ const Root = () => {
         <h1 className="w-full font-semibold lg:text-8xl md:text-7xl text-4xl absolute text-center top-1/4 z-10">
           Web3 Augmented <br /> Cognition Platform
         </h1>
-        {/* <img className="absolute right-0 -top-1/4" src={EllipseSvg} alt="" /> */}
-        {/* <img className="absolute left-0 top-0" src={EllipseLeftSvg} alt="" /> */}
       </div>
       <section className="max-w-[1440px] mx-auto lg:px-16 px-5 relative -top-14">
         <h2 className="md:text-5xl text-3xl text-center mb-8">Learn Course</h2>
@@ -41,30 +35,6 @@ const Root = () => {
           are here to empower you to overcome these challenges, embrace
           continuous learning, and bridge those gaps with confidence.
         </p>
-
-        {/* <div className="flex md:flex-row flex-col justify-between md:space-x-8 md:space-y-0 space-y-4 tracking-wider">
-          <div className="bg-white rounded-lg p-8 ">
-            <img className="w-14 h-14" src={BookSvg} alt="" />
-            <p className=" mt-9">
-              Build the basics while learning and progress your foundation with
-              more advanced STEM courses.
-            </p>
-          </div>
-          <div className="bg-white rounded-lg p-8">
-            <img className="w-14 h-14" src={KeyHoleSvg} alt="" />
-            <p className="mt-9">
-              Our approach is centered around two key pillars: knowledge
-              acquisition and active application.
-            </p>
-          </div>
-          <div className="bg-white rounded-lg p-8">
-            <img className="w-14 h-14" src={GoalSvg} alt="" />
-            <p className="mt-9">
-              Our goal is to provide entirely different experience for learning
-              material.
-            </p>
-          </div>
-        </div> */}
       </section>
       <section className="flex flex-col items-center mx-auto lg:px-16 px-5 mt-32">
         <img className="max-w-[348px] w-full" src={TextSvg} alt="" />
@@ -129,25 +99,27 @@ const Root = () => {
           be able to compete with others in a weekly lottery
         </p>
         <div className="flex justify-between flex-wrap">
-          <div className="md:m-0 m-6 flex items-center max-w-[max-content] space-x-16 rounded-lg p-3 bg-white">
+          <div className="md:m-0 shadow-lg m-6 flex items-center max-w-[max-content] space-x-16 rounded-lg p-4 bg-white">
             <img src={Figure1} alt="" />
             <span className="font-semibold text-3xl">AI</span>
           </div>
-          <div className="md:m-0 m-6 flex items-center max-w-[max-content] space-x-16 rounded-lg p-3 bg-white">
+          <div className="md:m-0 shadow-lg m-6 flex items-center max-w-[max-content] space-x-16 rounded-lg p-4 bg-white">
             <img src={Figure2} alt="" />
             <span className="font-semibold text-3xl">Blockchain</span>
           </div>
-          <div className="md:m-0 m-6 flex items-center max-w-[max-content] space-x-16 rounded-lg p-3 bg-white">
+          <div className="md:m-0 shadow-lg m-6 flex items-center max-w-[max-content] space-x-16 rounded-lg p-4 bg-white">
             <img src={Figure3} alt="" />
             <span className="font-semibold text-3xl">Math</span>
           </div>
-          <div className="md:m-0 m-6 flex items-center max-w-[max-content] space-x-16 rounded-lg p-3 bg-white">
-            <img src={Figure3} alt="" />
+          <div className="md:m-0 shadow-lg m-6 flex items-center max-w-[max-content] space-x-16 rounded-lg p-4 bg-white">
+            <img src={Figure4} alt="" />
             <span className="font-semibold text-3xl">Games</span>
           </div>
         </div>
         <div>
-          <img className="ml-auto my-10" src={GiveawaySvg} alt="" />
+          <Link to="https://knowledger.org/wiz">
+            <img className="ml-auto my-10" src={GiveawaySvg} alt="" />
+          </Link>
         </div>
       </section>
       <section className="rounded-3xl bg-black">
@@ -155,13 +127,6 @@ const Root = () => {
           Roadmap
         </h2>
         <img className="max-w-6xl w-full mx-auto p-8" src={RoadMapSvg} alt="" />
-      </section>
-
-      <section>
-        <h2 className="max-w-[1440px] text-5xl mb-8 font-semibold mx-auto lg:px-16 px-5 mt-32">
-          Team
-        </h2>
-        <img className="" src={TeamPng} alt="" />
       </section>
       <Footer />
     </div>

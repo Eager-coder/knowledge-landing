@@ -45,26 +45,29 @@ const DigitalPass = () => {
         <h2 className="text-center md:text-4xl  text-3xl mb-10">
           Upgrade levels and foster features
         </h2>
+        <div></div>
+
         <div className="md:flex justify-between md:space-x-5 md:space-y-0 space-y-8">
-          <div className="bg-[#EBEAF2] p-10 rounded-xl md:w-1/2">
-            <p className="md:text-xl">
-              <b>Functions</b> <br /> <br />
-              <b> Subject based.</b> Subject specific, which means that owning
-              "Chemistry" DP will only give me access to learn Chemistry
-              courses. <br /> <br /> <b>Level up. </b> DP will have level
-              gradation based on the subject. Students will be able to upgrade
-              this attribute by spending their earned EdRes Points. Upgrading
-              the level means that the student will now have access to courses
-              of the next level(in addition to courses of previous levels)
-            </p>
-          </div>
-          <div className="bg-[#FBE9E7] p-10 rounded-xl md:w-1/2">
+          <div className="bg-[#EBEAF2] p-10 rounded-xl ">
             <p className="md:text-xl">
               <b>Attributes</b> <br /> <br />
-              <b>Badges.</b> Badges are earned when successfully completing
-              courses from accredited institutions. Badges can then be placed on
-              the Digital Pass. <b>Diploma (store info and GPA).</b> <br />
+              <b>Subject.</b> Subject specific, which means that owning
+              "Chemistry" DP will only give me access to learn Chemistry
+              courses.
               <br />
+              <br />
+              <b>Level. </b>
+              DP will have level gradation based on the subject. Students will
+              be able to upgrade this attribute by spending their earned EdRes
+              <br />
+              <br />
+              <b>Points. </b>
+              Upgrading the level means that the student will now have access to
+              courses of the next level(in addition to courses of previous
+              levels)
+              <br />
+              <br />
+              <b>GPA. </b>
               DP will have level gradation based on the subject. DP is
               essentially our students' diploma which contains all the grades
               for the topics inside courses that were completed.

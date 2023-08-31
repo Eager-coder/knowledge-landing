@@ -25,12 +25,12 @@ const Navbar = () => {
           <Link to="/learn">Learn course</Link>
           <Link to="/earn-points">Earn points</Link>
           <Link to="/digital-pass">Play DP</Link>
-          <Link to="/">WIZ</Link>
+          <Link to="https://knowledger.org/wiz">WIZ</Link>
           <Link to="/share-knowledge">Share Knowledge</Link>
           <Link to="/research-and-development">R&D</Link>
         </div>
         <Link
-          to="/"
+          to="https://www.knowledger.org/signUp"
           className="px-9 py-3 text-white bg-[#6A4FF5] rounded-md lg:block hidden"
         >
           Sign up
@@ -57,11 +57,11 @@ const Navbar = () => {
           <Link to="/learn">Learn course</Link>
           <Link to="/earn-points">Earn points</Link>
           <Link to="/digital-pass">Play DP</Link>
-          <Link to="/">WIZ</Link>
+          <Link to="https://knowledger.org/wiz">WIZ</Link>
           <Link to="/share-knowledge">Share Knowledge</Link>
           <Link to="/research-and-development">R&D</Link>
           <Link
-            to="/"
+            to="https://www.knowledger.org/signUp"
             className="px-9 py-3 text-white bg-[#6A4FF5] rounded-md w-max"
           >
             Sign up
